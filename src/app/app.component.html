@@ -1,3 +1,15 @@
-<h1>Hello world</h1>
+<div>
+  <h3>{{ title }} header</h3>
+  <ul>
+    <li><a routerLink="/">Start</a></li>
+    <li><a routerLink="/users">Users</a></li>
+  </ul>
+</div>
 
-<rr-user></rr-user>
+<router-outlet></router-outlet>
+
+<div style="width: 900px; margin: 0 auto; height: 200px; overflow-y: auto; outline: 1px solid gray">
+  <rr-test-table></rr-test-table>
+</div>
+
+<h3>{{ title }} footer</h3>
